@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("assets/images/lawn-1846813__480.jpg");
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+h1{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 4rem;
+    
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#player-el{
+    position: relative;
+    top: 30px;
+}
+
+#message-el{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+button{
+    padding: 10px 20px;
+    width: 200px;
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    color: #016f32;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+}
