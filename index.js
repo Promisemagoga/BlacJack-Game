@@ -32,26 +32,26 @@ function startGame() {
    cards = [firstCard, secondCard]
    sum = firstCard + secondCard
 
+   
+    won +=  10
+    lost -=  10
    renderGame()
-   won +=  10
-   lost -=  10
 }
 
-let won = amount + 10;
-let lost = amount - 10;
+ let won = amount 
+let lost = amount 
 function renderGame() {
    if (sum <= 20) {
       message = "Do you want to draw a new card?"
    } else if (sum === 21) {
       message = "You've got a black jack"
-      hasBlackJack = true
-     
-      playerEl.innerHTML = "Balance: R" + won
+      hasBlackJack = true;
+       playerEl.innerHTML = "Balance: R" + won
  
    } else {
       message = "you are out of the game"
-      isAlive = false
-      playerEl.innerHTML = "Balance: R" + lost
+      isAlive = false;
+       playerEl.innerHTML = "Balance: R" + lost
    }
 
    messageEl.innerHTML = message
@@ -68,7 +68,7 @@ function renderGame() {
 // let newSum = sum + newCard
 function newCards() {
 
-   if (isAlive === true && hasBlackJack === false) {
+   if (isAlive === true || hasBlackJack === false) {
       let newCard = getRandomCard()
       sum += newCard
       cards.push(newCard)
